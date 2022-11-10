@@ -1,0 +1,19 @@
+{
+  "name": "xml-streamer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "types": "types/index.d.ts",
+  "scripts": {
+    "build": "esbuild ./src/* --platform=node --loader:.ts=ts --outdir=dist --format=cjs",
+    "build:types": "tsc --declaration --declarationDir ./types"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "esbuild": "^0.15.13",
+    "typescript": "^4.8.4"
+  }
+}
